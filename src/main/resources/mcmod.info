@@ -1,0 +1,21 @@
+[
+{
+  "modid": "NewRealmMinecraft",
+  "name": "New Realm Minecraft",
+  "description": "In development. No true content yet",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Realm Coder"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
