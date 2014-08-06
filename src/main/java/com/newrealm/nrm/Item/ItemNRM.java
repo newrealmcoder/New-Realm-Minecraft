@@ -19,9 +19,15 @@ public class ItemNRM extends Item {
     public ItemNRM()
     {
         super();
-        this.maxStackSize = 1;
+        this.maxStackSize = 64;
         this.setNoRepair();
 
+    }
+
+    public ItemNRM(String name)
+    {
+        this();
+        this.setUnlocalizedName(name);
     }
 
     /**

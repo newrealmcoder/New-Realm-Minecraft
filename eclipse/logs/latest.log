@@ -1,11 +1,29 @@
-[23:04:09] [main/INFO]: Setting user: ForgeDevName
-[23:04:10] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:05:13] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:New Realm Minecraft
-[23:05:14] [Sound Library Loader/INFO]: Sound engine started
-[23:05:15] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:05:15] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:05:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:New Realm Minecraft
-[23:05:15] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[23:05:16] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:05:17] [Sound Library Loader/INFO]: Sound engine started
-[23:05:54] [Client thread/INFO]: Stopping!
+[00:48:31] [main/INFO]: Setting user: ForgeDevName
+[00:48:32] [Client thread/INFO]: LWJGL Version: 2.9.1
+[00:48:38] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:New Realm Minecraft
+[00:48:39] [Sound Library Loader/INFO]: Sound engine started
+[00:48:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:48:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:48:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:New Realm Minecraft
+[00:48:40] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[00:48:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[00:48:41] [Sound Library Loader/INFO]: Sound engine started
+[00:48:47] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[00:48:47] [Server thread/INFO]: Generating keypair
+[00:48:48] [Server thread/INFO]: Preparing start region for level 0
+[00:48:48] [Server thread/INFO]: Changing view distance to 12, from 10
+[00:48:48] [Server thread/INFO]: ForgeDevName[local:E:0b3d79cd] logged in with entity id 168 at (707.3050046228913, 7.653939334087962, 1651.3582004464174)
+[00:48:48] [Server thread/INFO]: ForgeDevName joined the game
+[00:49:01] [Server thread/INFO]: [ForgeDevName: Given [Ruby Pedastol] * 1 to ForgeDevName]
+[00:49:01] [Client thread/INFO]: [CHAT] Given [Ruby Pedastol] * 1 to ForgeDevName
+[00:49:23] [Server thread/INFO]: Saving and pausing game...
+[00:49:23] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[00:49:23] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[00:49:23] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[00:49:24] [Server thread/INFO]: Stopping server
+[00:49:24] [Server thread/INFO]: Saving players
+[00:49:24] [Server thread/INFO]: Saving worlds
+[00:49:24] [Server thread/INFO]: Saving chunks for level 'Test World'/Overworld
+[00:49:24] [Server thread/INFO]: Saving chunks for level 'Test World'/Nether
+[00:49:24] [Server thread/INFO]: Saving chunks for level 'Test World'/The End
+[00:49:25] [Client thread/INFO]: Stopping!

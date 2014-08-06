@@ -13,7 +13,7 @@ public class Names {
 
     public static class Blocks
     {
-
+        public static final String RUBY_PEDASTOL = "rubyPedastol";
     }
 
 }

@@ -1,5 +1,7 @@
 package com.newrealm.nrm;
 
+import com.newrealm.nrm.Init.ModBlocks;
+import com.newrealm.nrm.Init.ModItems;
 import com.newrealm.nrm.handler.ConfigurationHandler;
 import com.newrealm.nrm.proxy.IProxy;
 import com.newrealm.nrm.reference.Reference;
@@ -42,6 +44,9 @@ public class NewRealmMinecraft {
         //Init configHandler using file that MCForge suggests to use
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        ModItems.init();
+        ModBlocks.init();
 
         LogHelper.info("Pre Initialization Completed");
     }
