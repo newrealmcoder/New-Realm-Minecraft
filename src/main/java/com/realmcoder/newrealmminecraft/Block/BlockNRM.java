@@ -1,5 +1,6 @@
 package com.realmcoder.newrealmminecraft.Block;
 
+import com.realmcoder.newrealmminecraft.creativetabs.CreativeTabsNRM;
 import com.realmcoder.newrealmminecraft.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -16,12 +17,27 @@ public class BlockNRM extends Block{
     public BlockNRM(Material material)
     {
         super(material);
+        this.setCreativeTab(CreativeTabsNRM.NRM_BLOCK_TAB);
     }
 
     public BlockNRM()
     {
-        super(Material.rock);
+        this(Material.rock);
     }
+
+    public BlockNRM(String blockName)
+    {
+        this(blockName, Material.rock);
+    }
+
+    public BlockNRM(String blockName, Material material)
+    {
+        this(material);
+        this.setBlockName(blockName);
+        this.setBlockTextureName(blockName);
+        this.setCreativeTab(CreativeTabsNRM.NRM_BLOCK_TAB);
+    }
+
 
     /**
      * Converts from tile.MOD_ID:blockName.name --> Item Name

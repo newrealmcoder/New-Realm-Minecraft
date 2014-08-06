@@ -19,7 +19,7 @@ public class CreativeTabsNRM {
         @Override
         public Item getTabIconItem()
         {
-            return ModBlocks.rubyPedastol.getItemDropped(1, new Random(), 1);
+            return ModBlocks.GEM_PEDESTAL.getItemDropped(1, new Random(), 1);
         }
     };
 

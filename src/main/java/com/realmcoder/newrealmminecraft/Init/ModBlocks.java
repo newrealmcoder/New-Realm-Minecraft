@@ -1,7 +1,8 @@
 package com.realmcoder.newrealmminecraft.Init;
 
 import com.realmcoder.newrealmminecraft.Block.BlockNRM;
-import com.realmcoder.newrealmminecraft.Block.BlockRubyPedastol;
+import com.realmcoder.newrealmminecraft.Block.BlockGemPedestal;
+import com.realmcoder.newrealmminecraft.Block.BlockTileEntities;
 import com.realmcoder.newrealmminecraft.reference.Names;
 import com.realmcoder.newrealmminecraft.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -13,10 +14,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModBlocks {
 
-    public static final BlockNRM rubyPedastol = new BlockRubyPedastol();
+    public static final BlockNRM GEM_PEDESTAL = new BlockGemPedestal();
+    public static final BlockNRM tileEntityBlocks = new BlockTileEntities();
 
     public static void init()
     {
-        GameRegistry.registerBlock(rubyPedastol, Names.Blocks.RUBY_PEDESTAL);
+        GameRegistry.registerBlock(GEM_PEDESTAL, Names.Blocks.GEM_PEDESTAL);
+        GameRegistry.registerBlock(tileEntityBlocks, Names.Blocks.TILE_ENTITY_BLOCK);
     }
 }

@@ -4,6 +4,7 @@ import com.realmcoder.newrealmminecraft.Init.ModBlocks;
 import com.realmcoder.newrealmminecraft.Init.ModItems;
 import com.realmcoder.newrealmminecraft.Init.Recipies;
 import com.realmcoder.newrealmminecraft.handler.ConfigurationHandler;
+import com.realmcoder.newrealmminecraft.network.PacketHandler;
 import com.realmcoder.newrealmminecraft.proxy.IProxy;
 import com.realmcoder.newrealmminecraft.reference.Reference;
 import com.realmcoder.newrealmminecraft.utility.LogHelper;
@@ -21,11 +22,11 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod (modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class NewRealmMinecraft {
 
-    //You can realiably use this as an instance of your mod. No one else can or will temper with it.
+    //You can reliably use this as an instance of your mod. No one else can or will temper with it.
     @Mod.Instance(Reference.MOD_ID)
     public static NewRealmMinecraft instance;
 
-    //Proxies
+    //Proxies 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
@@ -46,7 +47,10 @@ public class NewRealmMinecraft {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
+        PacketHandler.init();
+
         ModItems.init();
+
         ModBlocks.init();
 
         LogHelper.info("Pre Initialization Completed");
@@ -60,6 +64,8 @@ public class NewRealmMinecraft {
     public void init(FMLInitializationEvent event)
     {
         Recipies.init();
+
+        proxy.registerTileEntities();
 
         LogHelper.info("Initialization Completed");
     }

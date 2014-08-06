@@ -11,7 +11,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 
-import javax.xml.soap.Text;
 import java.util.List;
 
 /**
@@ -40,6 +39,12 @@ public class ItemMaterial extends ItemNRM{
         }
     }
 
+    @Override
+    @SideOnly(Side.CLIENT)
+    public IIcon getIconFromDamage(int meta)
+    {
+        return icons[MathHelper.clamp_int(meta, 0, Names.Items.MATERIAL_SUBTYPES.length - 1)];
+    }
 
     @Override
     public String getUnlocalizedName(ItemStack itemStack)

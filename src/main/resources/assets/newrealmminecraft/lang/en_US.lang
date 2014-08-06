@@ -13,6 +13,12 @@ item.newrealmminecraft:material.ingotSilver.name=Silver Ingot
 item.newrealmminecraft:material.ingotMagnetite.name=Magnetite Ingot
 item.newrealmminecraft:material.ingotZinc.name=Zinc Ingot
 item.newrealmminecraft:material.ingotManganese.name=Manganese Ingot
+item.newrealmminecraft:material.ingotSteel.name=Steel Ingot
+item.newrealmminecraft:material.ingotSteamSteel.name=Steam Steel Ingot
+item.newrealmminecraft:material.ingotSteamGold.name=Steam Gold Ingot
+item.newrealmminecraft:material.ingotSteamSilver.name=Steam Silver Ingot
+item.newrealmminecraft:material.ingotSteamTin.name=Steam Tin Ingot
+item.newrealmminecraft:material.ingotSteamCopper.name=Steam Copper Ingot
 item.newrealmminecraft:material.dustRuby.name=Ruby Dust
 item.newrealmminecraft:material.dustPeridot.name=Peridot Dust
 item.newrealmminecraft:material.dustSapphire.name=Sapphire Dust
@@ -25,6 +31,12 @@ item.newrealmminecraft:material.dustLead.name=Lead Dust
 item.newrealmminecraft:material.dustMagnetite.name=Magnetite Dust
 item.newrealmminecraft:material.dustZinc.name=Zinc Dust
 item.newrealmminecraft:material.dustManganese.name=Manganese Dust
+item.newrealmminecraft:material.dustSteel.name=Steel Dust
+item.newrealmminecraft:material.dustSteamSteel.name=Steam Steel Dust
+item.newrealmminecraft:material.dustSteamGold.name=Steam Gold Dust
+item.newrealmminecraft:material.dustSteamSilver.name=Steam Silver Dust
+item.newrealmminecraft:material.dustSteamTin.name=Steam Tin Dust
+item.newrealmminecraft:material.dustSteamCopper.name=Steam Copper Dust
 item.newrealmminecraft:material.dustIron.name=Iron Dust
 item.newrealmminecraft:material.dustGold.name=Gold Dust
 item.newrealmminecraft:material.dustDiamond.name=Diamond Dust
@@ -34,8 +46,9 @@ item.newrealmminecraft:material.bowlStone.name=Stone Bowl
 item.newrealmminecraft:mortarAndPestle.name=Mortar and Pestle
 
 #Tile Localizations
-tile.newrealmminecraft:rubyPedastol.name=Ruby Pedastol
+tile.newrealmminecraft:gemPedestal.name=Gem Pedestal
+tile.newrealmminecraft:grindstone.name=Grindstone
 
 #CreativeTab localizations
-itemgroup.newrealmminecraftblock=New Realm Minecraft Blocks
-itemgroup.newrealmminecraftitem=New Realm Minecraft Items
+itemGroup.newrealmminecraftblock=New Realm Minecraft Blocks
+itemGroup.newrealmminecraftitem=New Realm Minecraft Items

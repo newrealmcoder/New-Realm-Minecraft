@@ -19,14 +19,14 @@ public class ModItems {
 
     public static final ItemNRM throwingRock    = new ItemThrowingRock();
     public static final ItemNRM material        = new ItemMaterial();
-    public static final ItemNRM mortarAndPestal = new ItemMortarAndPestle();
+    public static final ItemNRM ITEM_MORTAR_AND_PESTLE = new ItemMortarAndPestle();
 
     public static void init()
     {
         GameRegistry.registerItem(throwingRock, Names.Items.THROWING_ROCK);
         GameRegistry.registerItem(material, Names.Items.MATERIAL);
 
-        GameRegistry.registerItem(mortarAndPestal, Names.Items.MORTAR_AND_PESTLE);
+        GameRegistry.registerItem(ITEM_MORTAR_AND_PESTLE, Names.Items.MORTAR_AND_PESTLE);
 
         for(int i = 0; i < Names.Items.MATERIAL_IN_OREDICT_LIMIT; i++)
         {

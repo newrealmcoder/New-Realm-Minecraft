@@ -6,6 +6,6 @@ package com.realmcoder.newrealmminecraft.proxy;
  */
 public interface IProxy {
 
-
+    public void registerTileEntities();
 
 }
