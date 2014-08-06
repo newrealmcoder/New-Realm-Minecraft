@@ -1,5 +1,33 @@
 #Item Localizations
 item.newrealmminecraft:throwingRock.name=Throwing Rocks
+item.newrealmminecraft:material.name=Unknown Material
+item.newrealmminecraft:material.gemRuby.name=Ruby
+item.newrealmminecraft:material.gemPeridot.name=Peridot
+item.newrealmminecraft:material.gemSapphire.name=Sapphire
+item.newrealmminecraft:material.gemEnrichium.name=Enrichium
+item.newrealmminecraft:material.gemEnergium.name=Energium
+item.newrealmminecraft:material.ingotCopper.name=Copper Ingot
+item.newrealmminecraft:material.ingotTin.name=Tin Ingot
+item.newrealmminecraft:material.ingotLead.name=Lead Ingot
+item.newrealmminecraft:material.ingotSilver.name=Silver Ingot
+item.newrealmminecraft:material.ingotMagnetite.name=Magnetite Ingot
+item.newrealmminecraft:material.ingotZinc.name=Zinc Ingot
+item.newrealmminecraft:material.ingotManganese.name=Manganese Ingot
+item.newrealmminecraft:material.dustRuby.name=Ruby Dust
+item.newrealmminecraft:material.dustPeridot.name=Peridot Dust
+item.newrealmminecraft:material.dustSapphire.name=Sapphire Dust
+item.newrealmminecraft:material.dustEnrichium.name=Enrichium Dust
+item.newrealmminecraft:material.dustEnergium.name=Energium Dust
+item.newrealmminecraft:material.dustCopper.name=Copper Dust
+item.newrealmminecraft:material.dustTin.name=Tin Dust
+item.newrealmminecraft:material.dustSilver.name=Silver Dust
+item.newrealmminecraft:material.dustLead.name=Lead Dust
+item.newrealmminecraft:material.dustMagnetite.name=Magnetite Dust
+item.newrealmminecraft:material.dustZinc.name=Zinc Dust
+item.newrealmminecraft:material.dustManganese.name=Manganese Dust
+item.newrealmminecraft:material.bowlStone.name=Stone Bowl
+
+item.newrealmminecraft:mortarAndPestle.name=Mortar and Pestle
 
 #Tile Localizations
 tile.newrealmminecraft:rubyPedastol.name=Ruby Pedastol

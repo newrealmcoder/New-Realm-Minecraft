@@ -18,7 +18,7 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.7.10-1.0"
-group= "com.realmcoder.nrm" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group= "com.realmcoder.newrealmminecraft" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "NewRealmMinecraft"
 
 minecraft {
