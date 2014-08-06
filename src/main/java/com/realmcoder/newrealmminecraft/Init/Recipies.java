@@ -17,10 +17,14 @@ public class Recipies {
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.material, 3, Names.Items.MATERIAL_END_OF_DUSTS), "s s", " s ", 's', "stone"));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.mortarAndPestal), "bowlStone", "stickWood"));
 
-        for(int i = 0; i < Names.Items.MATERIAL_DUSTABLE_LIMIT; i++)
+        for(int i = 0; i < Names.Items.MATERIAL_CRUSHABLE_LIMIT; i++)
         {
             GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.material, 1, i+11), new ItemStack(ModItems.mortarAndPestal), Names.Items.MATERIAL_SUBTYPES[i]));
         }
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.material, 1, Names.Items.MATERIAL_END_OF_DUSTS-4), new ItemStack(ModItems.mortarAndPestal), "ingotIron"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.material, 1, Names.Items.MATERIAL_END_OF_DUSTS-3), new ItemStack(ModItems.mortarAndPestal), "ingotGold"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.material, 1, Names.Items.MATERIAL_END_OF_DUSTS-2), new ItemStack(ModItems.mortarAndPestal), "gemDiamond"));
+        GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.material, 1, Names.Items.MATERIAL_END_OF_DUSTS-1), new ItemStack(ModItems.mortarAndPestal), "gemEmerald"));
     }
 
 }

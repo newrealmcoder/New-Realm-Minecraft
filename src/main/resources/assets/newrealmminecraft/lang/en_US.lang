@@ -25,6 +25,10 @@ item.newrealmminecraft:material.dustLead.name=Lead Dust
 item.newrealmminecraft:material.dustMagnetite.name=Magnetite Dust
 item.newrealmminecraft:material.dustZinc.name=Zinc Dust
 item.newrealmminecraft:material.dustManganese.name=Manganese Dust
+item.newrealmminecraft:material.dustIron.name=Iron Dust
+item.newrealmminecraft:material.dustGold.name=Gold Dust
+item.newrealmminecraft:material.dustDiamond.name=Diamond Dust
+item.newrealmminecraft:material.dustEmerald.name=Emerald Dust
 item.newrealmminecraft:material.bowlStone.name=Stone Bowl
 
 item.newrealmminecraft:mortarAndPestle.name=Mortar and Pestle
