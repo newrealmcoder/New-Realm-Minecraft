@@ -1,9 +1,9 @@
-package com.newrealm.nrm.Init;
+package com.realmcoder.nrm.Init;
 
-import com.newrealm.nrm.Item.ItemNRM;
-import com.newrealm.nrm.Item.ItemThrowingRock;
-import com.newrealm.nrm.reference.Names;
-import com.newrealm.nrm.reference.Reference;
+import com.realmcoder.nrm.Item.ItemNRM;
+import com.realmcoder.nrm.Item.ItemThrowingRock;
+import com.realmcoder.nrm.reference.Names;
+import com.realmcoder.nrm.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**

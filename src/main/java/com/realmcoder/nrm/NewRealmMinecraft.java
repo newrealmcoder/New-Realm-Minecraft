@@ -1,11 +1,11 @@
-package com.newrealm.nrm;
+package com.realmcoder.nrm;
 
-import com.newrealm.nrm.Init.ModBlocks;
-import com.newrealm.nrm.Init.ModItems;
-import com.newrealm.nrm.handler.ConfigurationHandler;
-import com.newrealm.nrm.proxy.IProxy;
-import com.newrealm.nrm.reference.Reference;
-import com.newrealm.nrm.utility.LogHelper;
+import com.realmcoder.nrm.Init.ModBlocks;
+import com.realmcoder.nrm.Init.ModItems;
+import com.realmcoder.nrm.handler.ConfigurationHandler;
+import com.realmcoder.nrm.proxy.IProxy;
+import com.realmcoder.nrm.reference.Reference;
+import com.realmcoder.nrm.utility.LogHelper;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;

@@ -846,19 +846,19 @@ java.lang.NullPointerException
 [00:36:36] [Client thread/TRACE] [FML/]: Recursing into package assets.newrealmminecraft.textures.blocks
 [00:36:36] [Client thread/TRACE] [FML/]: Recursing into package assets.newrealmminecraft.textures.items
 [00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Block
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Init
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Item
-[00:36:36] [Client thread/DEBUG] [FML/]: Identified an FMLMod type mod com.newrealm.nrm.NewRealmMinecraft
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Block
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Init
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Item
+[00:36:36] [Client thread/DEBUG] [FML/]: Identified an FMLMod type mod com.realmcoder.nrm.NewRealmMinecraft
 [00:36:36] [Client thread/TRACE] [NewRealmMinecraft/]: Parsed dependency info : [] [] []
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.client
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.client.gui
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.handler
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.proxy
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.reference
-[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.utility
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.client
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.client.gui
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.handler
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.proxy
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.reference
+[00:36:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.utility
 [00:36:36] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
 [00:36:36] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
 [00:36:36] [Client thread/DEBUG] [FML/]: Examining file forgeSrc-1.7.10-10.13.0.1180.jar for potential mods
@@ -1036,7 +1036,7 @@ java.lang.NullPointerException
 [00:36:57] [Client thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
 [00:36:57] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
 [00:36:57] [Client thread/TRACE] [NewRealmMinecraft/NewRealmMinecraft]: Sending event FMLPreInitializationEvent to mod NewRealmMinecraft
-[00:36:58] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@3ba90248 (req. id -1)
+[00:36:58] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@3ba90248 (req. id -1)
 [00:36:58] [Client thread/INFO] [New Realm Minecraft/NewRealmMinecraft]: Pre Initialization Completed
 [00:36:58] [Client thread/TRACE] [NewRealmMinecraft/NewRealmMinecraft]: Sent event FMLPreInitializationEvent to mod NewRealmMinecraft
 [00:36:58] [Client thread/INFO] [FML/]: Applying holder lookups

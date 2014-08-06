@@ -1,6 +1,6 @@
-package com.newrealm.nrm.utility;
+package com.realmcoder.nrm.utility;
 
-import com.newrealm.nrm.reference.Reference;
+import com.realmcoder.nrm.reference.Reference;
 import cpw.mods.fml.common.FMLLog;
 import org.apache.logging.log4j.Level;
 

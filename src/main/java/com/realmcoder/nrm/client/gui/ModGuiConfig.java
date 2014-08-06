@@ -1,7 +1,7 @@
-package com.newrealm.nrm.client.gui;
+package com.realmcoder.nrm.client.gui;
 
-import com.newrealm.nrm.handler.ConfigurationHandler;
-import com.newrealm.nrm.reference.Reference;
+import com.realmcoder.nrm.handler.ConfigurationHandler;
+import com.realmcoder.nrm.reference.Reference;
 import cpw.mods.fml.client.config.GuiConfig;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;

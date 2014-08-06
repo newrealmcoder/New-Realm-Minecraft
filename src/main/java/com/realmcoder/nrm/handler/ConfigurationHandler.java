@@ -1,7 +1,6 @@
-package com.newrealm.nrm.handler;
+package com.realmcoder.nrm.handler;
 
-import com.newrealm.nrm.reference.Reference;
-import com.newrealm.nrm.utility.LogHelper;
+import com.realmcoder.nrm.reference.Reference;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.config.Configuration;

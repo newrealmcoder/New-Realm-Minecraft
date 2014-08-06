@@ -1,6 +1,6 @@
-package com.newrealm.nrm.Block;
+package com.realmcoder.nrm.Block;
 
-import com.newrealm.nrm.reference.Names;
+import com.realmcoder.nrm.reference.Names;
 import net.minecraft.block.material.Material;
 
 /**

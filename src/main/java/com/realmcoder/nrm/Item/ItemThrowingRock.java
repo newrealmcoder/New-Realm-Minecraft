@@ -1,6 +1,6 @@
-package com.newrealm.nrm.Item;
+package com.realmcoder.nrm.Item;
 
-import com.newrealm.nrm.reference.Names;
+import com.realmcoder.nrm.reference.Names;
 
 /**
  * Created by RealmCoder on 8/5/14.

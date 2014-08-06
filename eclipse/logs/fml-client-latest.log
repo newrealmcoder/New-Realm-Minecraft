@@ -846,19 +846,19 @@ java.lang.NullPointerException
 [00:48:36] [Client thread/TRACE] [FML/]: Recursing into package assets.newrealmminecraft.textures.blocks
 [00:48:36] [Client thread/TRACE] [FML/]: Recursing into package assets.newrealmminecraft.textures.items
 [00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Block
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Init
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Item
-[00:48:36] [Client thread/DEBUG] [FML/]: Identified an FMLMod type mod com.newrealm.nrm.NewRealmMinecraft
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Block
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Init
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Item
+[00:48:36] [Client thread/DEBUG] [FML/]: Identified an FMLMod type mod com.realmcoder.nrm.NewRealmMinecraft
 [00:48:36] [Client thread/TRACE] [NewRealmMinecraft/]: Parsed dependency info : [] [] []
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.client
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.client.gui
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.handler
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.proxy
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.reference
-[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.utility
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.client
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.client.gui
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.handler
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.proxy
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.reference
+[00:48:36] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.utility
 [00:48:36] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
 [00:48:36] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
 [00:48:36] [Client thread/DEBUG] [FML/]: Examining file forgeSrc-1.7.10-10.13.0.1180.jar for potential mods
@@ -1036,9 +1036,9 @@ java.lang.NullPointerException
 [00:48:38] [Client thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
 [00:48:38] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
 [00:48:38] [Client thread/TRACE] [NewRealmMinecraft/NewRealmMinecraft]: Sending event FMLPreInitializationEvent to mod NewRealmMinecraft
-[00:48:38] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@6c3e4de1 (req. id -1)
-[00:48:38] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:rubyPedastol 165 com.newrealm.nrm.Block.BlockRubyPedastol@6e6b264b (req. id -1)
-[00:48:38] [Client thread/DEBUG] [FML/NewRealmMinecraft]: Found matching Block com.newrealm.nrm.Block.BlockRubyPedastol@6e6b264b for ItemBlock net.minecraft.item.ItemBlock@3c9f3e8f at id 165, original id requested: -1
+[00:48:38] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@6c3e4de1 (req. id -1)
+[00:48:38] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:rubyPedastol 165 com.realmcoder.nrm.Block.BlockRubyPedastol@6e6b264b (req. id -1)
+[00:48:38] [Client thread/DEBUG] [FML/NewRealmMinecraft]: Found matching Block com.realmcoder.nrm.Block.BlockRubyPedastol@6e6b264b for ItemBlock net.minecraft.item.ItemBlock@3c9f3e8f at id 165, original id requested: -1
 [00:48:38] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:rubyPedastol 165 net.minecraft.item.ItemBlock@3c9f3e8f (req. id 165)
 [00:48:38] [Client thread/INFO] [New Realm Minecraft/NewRealmMinecraft]: Pre Initialization Completed
 [00:48:38] [Client thread/TRACE] [NewRealmMinecraft/NewRealmMinecraft]: Sent event FMLPreInitializationEvent to mod NewRealmMinecraft
@@ -1277,7 +1277,7 @@ java.lang.NullPointerException
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:log2 162 net.minecraft.block.BlockNewLog@108f8051
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:acacia_stairs 163 net.minecraft.block.BlockStairs@3d314e55
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:dark_oak_stairs 164 net.minecraft.block.BlockStairs@700dcdd5
-[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:rubyPedastol 165 com.newrealm.nrm.Block.BlockRubyPedastol@6e6b264b
+[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:rubyPedastol 165 com.realmcoder.nrm.Block.BlockRubyPedastol@6e6b264b
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:hay_block 170 net.minecraft.block.BlockHay@3c4054f4
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:carpet 171 net.minecraft.block.BlockCarpet@627cfbd7
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:hardened_clay 172 net.minecraft.block.BlockHardenedClay@66fae200
@@ -1600,7 +1600,7 @@ java.lang.NullPointerException
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:record_ward 2265 net.minecraft.item.ItemRecord@2aa676c9
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:record_11 2266 net.minecraft.item.ItemRecord@16c09bff
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:record_wait 2267 net.minecraft.item.ItemRecord@3f418e04
-[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@6c3e4de1
+[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@6c3e4de1
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:wooden_pressure_plate 72 net.minecraft.block.BlockPressurePlate@5db00667 (req. id 72)
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:enchanting_table 116 net.minecraft.block.BlockEnchantmentTable@7515ff74 (req. id 116)
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:emerald_ore 129 net.minecraft.block.BlockOre@65644dee (req. id 129)
@@ -2024,7 +2024,7 @@ java.lang.NullPointerException
 [00:48:47] [Server thread/DEBUG] [FML/]: Found matching Block net.minecraft.block.BlockChest@21c1ef0c for ItemBlock net.minecraft.item.ItemBlock@694c5548 at id 54, original id requested: 54
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:chest 54 net.minecraft.item.ItemBlock@694c5548 (req. id 54)
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:filled_map 358 net.minecraft.item.ItemMap@1b802d73 (req. id 358)
-[00:48:47] [Server thread/TRACE] [FML/]: Registry add: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@6c3e4de1 (req. id 4096)
+[00:48:47] [Server thread/TRACE] [FML/]: Registry add: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@6c3e4de1 (req. id 4096)
 [00:48:47] [Server thread/DEBUG] [FML/]: Found matching Block net.minecraft.block.BlockStairs@3bc7e3cc for ItemBlock net.minecraft.item.ItemBlock@266713c1 at id 136, original id requested: 136
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:jungle_stairs 136 net.minecraft.item.ItemBlock@266713c1 (req. id 136)
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:record_ward 2265 net.minecraft.item.ItemRecord@2aa676c9 (req. id 2265)
@@ -2233,9 +2233,9 @@ java.lang.NullPointerException
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:stone_button 77 net.minecraft.item.ItemBlock@312121b7 (req. id 77)
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: minecraft:quartz 406 net.minecraft.item.Item@245a9783 (req. id 406)
 [00:48:47] [Server thread/INFO] [FML/]: Injecting new block and item data into this server instance.
-[00:48:47] [Server thread/TRACE] [FML/]: Registry add: NewRealmMinecraft:rubyPedastol 165 com.newrealm.nrm.Block.BlockRubyPedastol@6e6b264b (req. id 165)
+[00:48:47] [Server thread/TRACE] [FML/]: Registry add: NewRealmMinecraft:rubyPedastol 165 com.realmcoder.nrm.Block.BlockRubyPedastol@6e6b264b (req. id 165)
 [00:48:47] [Server thread/INFO] [FML/]: Injected new block/item NewRealmMinecraft:rubyPedastol: 165 (init) -> 165 (map).
-[00:48:47] [Server thread/DEBUG] [FML/]: Found matching Block com.newrealm.nrm.Block.BlockRubyPedastol@6e6b264b for ItemBlock net.minecraft.item.ItemBlock@3c9f3e8f at id 165, original id requested: 165
+[00:48:47] [Server thread/DEBUG] [FML/]: Found matching Block com.realmcoder.nrm.Block.BlockRubyPedastol@6e6b264b for ItemBlock net.minecraft.item.ItemBlock@3c9f3e8f at id 165, original id requested: 165
 [00:48:47] [Server thread/TRACE] [FML/]: Registry add: NewRealmMinecraft:rubyPedastol 165 net.minecraft.item.ItemBlock@3c9f3e8f (req. id 165)
 [00:48:47] [Server thread/INFO] [FML/]: Injected new block/item NewRealmMinecraft:rubyPedastol: 165 (init) -> 165 (map).
 [00:48:47] [Server thread/DEBUG] [FML/]: Registry consistency check successful
@@ -2404,7 +2404,7 @@ java.lang.NullPointerException
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:log2 162 net.minecraft.block.BlockNewLog@108f8051
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:acacia_stairs 163 net.minecraft.block.BlockStairs@3d314e55
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:dark_oak_stairs 164 net.minecraft.block.BlockStairs@700dcdd5
-[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:rubyPedastol 165 com.newrealm.nrm.Block.BlockRubyPedastol@6e6b264b
+[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:rubyPedastol 165 com.realmcoder.nrm.Block.BlockRubyPedastol@6e6b264b
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:hay_block 170 net.minecraft.block.BlockHay@3c4054f4
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:carpet 171 net.minecraft.block.BlockCarpet@627cfbd7
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:hardened_clay 172 net.minecraft.block.BlockHardenedClay@66fae200
@@ -2727,7 +2727,7 @@ java.lang.NullPointerException
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:record_ward 2265 net.minecraft.item.ItemRecord@2aa676c9
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:record_11 2266 net.minecraft.item.ItemRecord@16c09bff
 [00:48:47] [Server thread/TRACE] [FML/]: Registry: minecraft:record_wait 2267 net.minecraft.item.ItemRecord@3f418e04
-[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@6c3e4de1
+[00:48:47] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@6c3e4de1
 [00:48:47] [Server thread/TRACE] [FML/]: Skipping remap event - no remaps occured
 [00:48:47] [Server thread/INFO] [FML/]: Applying holder lookups
 [00:48:47] [Server thread/INFO] [FML/]: Holder lookups applied

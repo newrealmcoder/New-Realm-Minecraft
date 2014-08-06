@@ -3,3 +3,7 @@ item.newrealmminecraft:throwingRock.name=Throwing Rocks
 
 #Tile Localizations
 tile.newrealmminecraft:rubyPedastol.name=Ruby Pedastol
+
+#CreativeTab localizations
+itemgroup.newrealmminecraftblock=New Realm Minecraft Blocks
+itemgroup.newrealmminecraftitem=New Realm Minecraft Items

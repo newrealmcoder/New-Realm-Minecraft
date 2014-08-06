@@ -846,19 +846,19 @@ java.lang.NullPointerException
 [00:46:43] [Client thread/TRACE] [FML/]: Recursing into package assets.newrealmminecraft.textures.blocks
 [00:46:43] [Client thread/TRACE] [FML/]: Recursing into package assets.newrealmminecraft.textures.items
 [00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Block
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Init
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.Item
-[00:46:43] [Client thread/DEBUG] [FML/]: Identified an FMLMod type mod com.newrealm.nrm.NewRealmMinecraft
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Block
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Init
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.Item
+[00:46:43] [Client thread/DEBUG] [FML/]: Identified an FMLMod type mod com.realmcoder.nrm.NewRealmMinecraft
 [00:46:43] [Client thread/TRACE] [NewRealmMinecraft/]: Parsed dependency info : [] [] []
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.client
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.client.gui
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.handler
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.proxy
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.reference
-[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.newrealm.nrm.utility
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.client
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.client.gui
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.handler
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.proxy
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.reference
+[00:46:43] [Client thread/TRACE] [FML/]: Recursing into package com.realmcoder.nrm.utility
 [00:46:43] [Client thread/DEBUG] [FML/]: Examining directory start for potential mods
 [00:46:43] [Client thread/DEBUG] [FML/]: No mcmod.info file found in directory start
 [00:46:43] [Client thread/DEBUG] [FML/]: Examining file forgeSrc-1.7.10-10.13.0.1180.jar for potential mods
@@ -1036,11 +1036,11 @@ java.lang.NullPointerException
 [00:46:46] [Client thread/INFO] [FML/Forge]: Configured a dormant chunk cache size of 0
 [00:46:46] [Client thread/TRACE] [Forge/Forge]: Sent event FMLPreInitializationEvent to mod Forge
 [00:46:46] [Client thread/TRACE] [NewRealmMinecraft/NewRealmMinecraft]: Sending event FMLPreInitializationEvent to mod NewRealmMinecraft
-[00:46:46] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@2d88b814 (req. id -1)
+[00:46:46] [Client thread/TRACE] [FML/NewRealmMinecraft]: Registry add: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@2d88b814 (req. id -1)
 [00:46:46] [Client thread/INFO] [New Realm Minecraft/NewRealmMinecraft]: Pre Initialization Completed
 [00:46:46] [Client thread/TRACE] [NewRealmMinecraft/NewRealmMinecraft]: Sent event FMLPreInitializationEvent to mod NewRealmMinecraft
 [00:46:46] [Client thread/INFO] [FML/]: Applying holder lookups
-[00:46:46] [Client thread/WARN] [FML/]: Unable to lookup NewRealmMinecraft:rubyPedastol for public static com.newrealm.nrm.Block.BlockNRM com.newrealm.nrm.Init.ModBlocks.rubyPedastol. Is there something wrong with the registry?
+[00:46:46] [Client thread/WARN] [FML/]: Unable to lookup NewRealmMinecraft:rubyPedastol for public static com.realmcoder.nrm.Block.BlockNRM com.realmcoder.nrm.Init.ModBlocks.rubyPedastol. Is there something wrong with the registry?
 [00:46:46] [Client thread/INFO] [FML/]: Holder lookups applied
 [00:46:47] [Client thread/TRACE] [mcp/mcp]: Sending event FMLInitializationEvent to mod mcp
 [00:46:47] [Client thread/TRACE] [mcp/mcp]: Sent event FMLInitializationEvent to mod mcp
@@ -1596,7 +1596,7 @@ java.lang.NullPointerException
 [00:46:57] [Server thread/TRACE] [FML/]: Registry: minecraft:record_ward 2265 net.minecraft.item.ItemRecord@79332c0e
 [00:46:57] [Server thread/TRACE] [FML/]: Registry: minecraft:record_11 2266 net.minecraft.item.ItemRecord@e91894c
 [00:46:57] [Server thread/TRACE] [FML/]: Registry: minecraft:record_wait 2267 net.minecraft.item.ItemRecord@74cce40c
-[00:46:57] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@2d88b814
+[00:46:57] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@2d88b814
 [00:46:57] [Server thread/TRACE] [FML/]: Registry add: minecraft:wooden_pressure_plate 72 net.minecraft.block.BlockPressurePlate@62bf5822 (req. id 72)
 [00:46:57] [Server thread/TRACE] [FML/]: Registry add: minecraft:enchanting_table 116 net.minecraft.block.BlockEnchantmentTable@2711815d (req. id 116)
 [00:46:57] [Server thread/TRACE] [FML/]: Registry add: minecraft:emerald_ore 129 net.minecraft.block.BlockOre@67a9cb9d (req. id 129)
@@ -2020,7 +2020,7 @@ java.lang.NullPointerException
 [00:46:57] [Server thread/DEBUG] [FML/]: Found matching Block net.minecraft.block.BlockChest@555bbc6 for ItemBlock net.minecraft.item.ItemBlock@1a4e0124 at id 54, original id requested: 54
 [00:46:57] [Server thread/TRACE] [FML/]: Registry add: minecraft:chest 54 net.minecraft.item.ItemBlock@1a4e0124 (req. id 54)
 [00:46:57] [Server thread/TRACE] [FML/]: Registry add: minecraft:filled_map 358 net.minecraft.item.ItemMap@50bb2703 (req. id 358)
-[00:46:57] [Server thread/TRACE] [FML/]: Registry add: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@2d88b814 (req. id 4096)
+[00:46:57] [Server thread/TRACE] [FML/]: Registry add: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@2d88b814 (req. id 4096)
 [00:46:57] [Server thread/DEBUG] [FML/]: Found matching Block net.minecraft.block.BlockStairs@1fc0b14c for ItemBlock net.minecraft.item.ItemBlock@7c4ccb2f at id 136, original id requested: 136
 [00:46:57] [Server thread/TRACE] [FML/]: Registry add: minecraft:jungle_stairs 136 net.minecraft.item.ItemBlock@7c4ccb2f (req. id 136)
 [00:46:57] [Server thread/TRACE] [FML/]: Registry add: minecraft:record_ward 2265 net.minecraft.item.ItemRecord@79332c0e (req. id 2265)
@@ -2715,10 +2715,10 @@ java.lang.NullPointerException
 [00:46:57] [Server thread/TRACE] [FML/]: Registry: minecraft:record_ward 2265 net.minecraft.item.ItemRecord@79332c0e
 [00:46:57] [Server thread/TRACE] [FML/]: Registry: minecraft:record_11 2266 net.minecraft.item.ItemRecord@e91894c
 [00:46:57] [Server thread/TRACE] [FML/]: Registry: minecraft:record_wait 2267 net.minecraft.item.ItemRecord@74cce40c
-[00:46:57] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.newrealm.nrm.Item.ItemThrowingRock@2d88b814
+[00:46:57] [Server thread/TRACE] [FML/]: Registry: NewRealmMinecraft:throwingRock 4096 com.realmcoder.nrm.Item.ItemThrowingRock@2d88b814
 [00:46:57] [Server thread/TRACE] [FML/]: Skipping remap event - no remaps occured
 [00:46:57] [Server thread/INFO] [FML/]: Applying holder lookups
-[00:46:57] [Server thread/WARN] [FML/]: Unable to lookup NewRealmMinecraft:rubyPedastol for public static com.newrealm.nrm.Block.BlockNRM com.newrealm.nrm.Init.ModBlocks.rubyPedastol. Is there something wrong with the registry?
+[00:46:57] [Server thread/WARN] [FML/]: Unable to lookup NewRealmMinecraft:rubyPedastol for public static com.realmcoder.nrm.Block.BlockNRM com.realmcoder.nrm.Init.ModBlocks.rubyPedastol. Is there something wrong with the registry?
 [00:46:57] [Server thread/INFO] [FML/]: Holder lookups applied
 [00:46:57] [Server thread/INFO] [FML/]: Loading dimension 0 (Test World) (net.minecraft.server.integrated.IntegratedServer@213bd10f)
 [00:46:57] [Server thread/INFO] [FML/]: Loading dimension 1 (Test World) (net.minecraft.server.integrated.IntegratedServer@213bd10f)

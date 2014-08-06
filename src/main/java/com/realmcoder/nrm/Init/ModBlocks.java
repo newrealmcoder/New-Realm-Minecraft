@@ -1,9 +1,9 @@
-package com.newrealm.nrm.Init;
+package com.realmcoder.nrm.Init;
 
-import com.newrealm.nrm.Block.BlockNRM;
-import com.newrealm.nrm.Block.BlockRubyPedastol;
-import com.newrealm.nrm.reference.Names;
-import com.newrealm.nrm.reference.Reference;
+import com.realmcoder.nrm.Block.BlockNRM;
+import com.realmcoder.nrm.Block.BlockRubyPedastol;
+import com.realmcoder.nrm.reference.Names;
+import com.realmcoder.nrm.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
