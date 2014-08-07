@@ -1,0 +1,22 @@
+package com.realmcoder.newrealmminecraft.recipe;
+
+import java.util.List;
+
+
+public class RecipesGrinder {
+    
+    private static RecipesGrinder grinderRegistry= null;
+    
+    private List<RecipeGrinder> grinderRecipes;
+    
+    public static RecipesGrinder getInstance()
+    {
+        if(grinderRegistry == null)
+        {
+            grinderRegistry = new RecipesGrinder();
+        }
+        
+        return grinderRegistry;
+    }
+    
+}

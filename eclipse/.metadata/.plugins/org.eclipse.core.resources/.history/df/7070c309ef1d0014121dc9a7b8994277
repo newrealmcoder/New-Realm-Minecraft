@@ -1,0 +1,70 @@
+package com.realmcoder.newrealmminecraft.recipe;
+
+import java.util.List;
+
+import net.minecraft.item.ItemStack;
+
+import com.google.common.collect.ImmutableList;
+import com.realmcoder.newrealmminecraft.Item.crafting.RecipeGrinder;
+import com.realmcoder.newrealmminecraft.utility.OreStack;
+
+
+public class RecipesGrinder {
+    
+    private static RecipesGrinder grinderRegistry= null;
+    
+    private List<RecipeGrinder> grinderRecipes;
+    
+    public static RecipesGrinder getInstance()
+    {
+        if(grinderRegistry == null)
+        {
+            grinderRegistry = new RecipesGrinder();
+        }
+        
+        return grinderRegistry;
+    }
+    
+    public void addRecipe(ItemStack output, int highAmountPossible, OreStack input)
+    {
+        grinderRecipes.add(new RecipeGrinder(output, highAmountPossible, input));
+    }
+    
+    public void addRecipe(ItemStack output, int highAmountPossible, ItemStack input)
+    {
+        grinderRecipes.add(new RecipeGrinder(output, highAmountPossible, input));
+    }
+    
+    public void addRecipe(RecipeGrinder recipe)
+    {
+        grinderRecipes.add(recipe);
+    }
+    
+    public ItemStack getResult(ItemStack input)
+    {
+        for(RecipeGrinder recipe : grinderRecipes)
+        {
+            if(recipe.isValidInput(input))
+                return recipe.getOutput();
+        }
+        
+        return null;
+    }
+    
+    public RecipeGrinder getRecipe(ItemStack input)
+    {
+        for(RecipeGrinder recipe : grinderRecipes)
+        {
+            if(recipe.isValidInput(input))
+                return recipe;
+        }
+        
+        return null;
+    }
+    
+    public List<RecipeGrinder> getRecipes()
+    {
+        return ImmutableList.copyOf(grinderRecipes);
+    }
+    
+}

@@ -1,0 +1,8 @@
+package com.realmcoder.newrealmminecraft.inventory;
+
+import net.minecraft.inventory.Slot;
+
+
+public class SlotOreOnly extends Slot {
+    
+}

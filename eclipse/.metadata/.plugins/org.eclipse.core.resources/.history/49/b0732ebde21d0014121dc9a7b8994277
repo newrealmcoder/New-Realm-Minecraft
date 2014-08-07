@@ -1,0 +1,24 @@
+package com.realmcoder.newrealmminecraft.client.gui.inventory;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.InventoryPlayer;
+
+import com.realmcoder.newrealmminecraft.inventory.ContainerGrindstone;
+import com.realmcoder.newrealmminecraft.tileentity.TileEntityGrindstone;
+
+
+public class GrindstoneGui extends GuiContainer {
+    
+    
+    public GrindstoneGui(InventoryPlayer inventoryPlayer, TileEntityGrindstone tileGrindstone)
+    {
+        super(new ContainerGrindstone(inventoryPlayer, tileGrindstone));
+    }
+
+    @Override
+    protected void drawGuiContainerBackgroundLayer(float p_146976_1_, int p_146976_2_, int p_146976_3_)
+    {
+        
+    }
+    
+}

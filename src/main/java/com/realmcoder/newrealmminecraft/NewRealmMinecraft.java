@@ -46,12 +46,12 @@ public class NewRealmMinecraft {
         //Init configHandler using file that MCForge suggests to use
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-
-        PacketHandler.init();
-
+        
         ModItems.init();
 
         ModBlocks.init();
+        
+        PacketHandler.init();
 
         LogHelper.info("Pre Initialization Completed");
     }

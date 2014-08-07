@@ -1,0 +1,42 @@
+package com.realmcoder.newrealmminecraft.Item.crafting;
+
+import com.realmcoder.newrealmminecraft.utility.OreStack;
+
+import net.minecraft.item.ItemStack;
+
+
+public class RecipeGrinder {
+    
+    private ItemStack output;
+    private int amountToOutputAtFullEfficiency;
+    private OreStack input;
+    
+    public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, OreStack input)
+    {
+        this.output = output;
+        this.output.stackSize = 1;
+        this.amountToOutputAtFullEfficiency = amountToOutputAtFullEfficiency;
+        this.input = input;
+    }
+    
+    public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, ItemStack input)
+    {
+        this(output, amountToOutputAtFullEfficiency, new OreStack(input));
+    }
+    
+    public ItemStack getOutput()
+    {
+        return output;
+    }
+    
+    public int getAmountToOutput(double percentage)
+    {
+        return (int) (percentage * (double) amountToOutputAtFullEfficiency);
+    }
+    
+    public int getAmountToOutput(int percentage)
+    {
+        return (int) (((double)(percentage * amountToOutputAtFullEfficiency))/100D);
+    }
+    
+}

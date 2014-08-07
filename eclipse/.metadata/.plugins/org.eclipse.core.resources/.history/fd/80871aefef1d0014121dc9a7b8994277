@@ -1,0 +1,19 @@
+package com.realmcoder.newrealmminecraft.recipe;
+
+import java.util.ArrayList;
+
+
+public class RecipeRegistry {
+    
+    private RecipesNRM[] recipeLists;
+    
+    public static final int GRINDSTONE_RECIPES_ID = 0;
+    public static final int MAX_CUR_RECIPE_ID     = 0;
+    
+    public void init()
+    {
+        recipeLists = new RecipesNRM[MAX_CUR_RECIPE_ID+1];
+        
+    }
+    
+}

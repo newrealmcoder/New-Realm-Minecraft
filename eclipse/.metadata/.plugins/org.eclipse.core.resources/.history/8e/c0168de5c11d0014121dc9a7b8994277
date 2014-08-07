@@ -1,0 +1,16 @@
+package com.realmcoder.newrealmminecraft.client.gui.inventory;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+
+
+public class GrindstoneGui extends GuiContainer {
+    
+    @Override
+    protected void drawGuiContainerBackgroundLayer(float p_146976_1_,
+            int p_146976_2_, int p_146976_3_)
+    {
+        // TODO Auto-generated method stub
+        
+    }
+    
+}

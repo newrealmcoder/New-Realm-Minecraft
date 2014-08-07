@@ -1,2 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.block.material.Material"/>
+<fullyQualifiedTypeName name="com.realmcoder.newrealmminecraft.creativetabs.CreativeTabsNRM"/>
+<fullyQualifiedTypeName name="com.realmcoder.newrealmminecraft.reference.Names.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockContainer"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.InventoryPlayer"/>
+<fullyQualifiedTypeName name="com.realmcoder.newrealmminecraft.tileentity.TileEntityGrindstone"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="com.realmcoder.newrealmminecraft.reference.Reference"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.realmcoder.newrealmminecraft.Item.crafting.RecipeGrinder"/>
+<fullyQualifiedTypeName name="net.minecraftforge.oredict.OreDictionary"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.realmcoder.newrealmminecraft.Item.crafting.RecipeNRM"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.realmcoder.newrealmminecraft.recipe.RecipeRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
+</qualifiedTypeNameHistroy>

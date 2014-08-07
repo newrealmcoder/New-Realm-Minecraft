@@ -1,9 +1,9 @@
 package com.realmcoder.newrealmminecraft.Block;
 
-import com.realmcoder.newrealmminecraft.reference.Names;
-import com.realmcoder.newrealmminecraft.tileentity.TileEntityGrindStone;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import java.util.List;
+
+import net.minecraft.block.BlockContainer;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -13,20 +13,28 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 
-import java.util.List;
+import com.realmcoder.newrealmminecraft.creativetabs.CreativeTabsNRM;
+import com.realmcoder.newrealmminecraft.reference.Names;
+import com.realmcoder.newrealmminecraft.reference.Textures;
+import com.realmcoder.newrealmminecraft.tileentity.TileEntityGrindstone;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 /**
  * Created by RealmCoder on 8/6/14.
  * Contributors:
  */
-public class BlockTileEntities extends BlockNRM {
+public class BlockTileEntities extends BlockContainer {
 
     @SideOnly(Side.CLIENT)
     IIcon[][] icons;
 
     public BlockTileEntities()
     {
-        super(Names.Blocks.TILE_ENTITY_BLOCK);
+        super(Material.rock);
+        this.setCreativeTab(CreativeTabsNRM.NRM_BLOCK_TAB);
+        this.setBlockName(Names.Blocks.TILE_ENTITY_BLOCK);
     }
 
     /**
@@ -87,6 +95,24 @@ public class BlockTileEntities extends BlockNRM {
         return metaData;
     }
 
+    /**
+     * Converts from tile.MOD_ID:blockName.name --> Item Name
+     *      i.e. how minecraft expects it
+     * @return
+     */
+    @Override
+    public String getUnlocalizedName()
+    {
+        return String.format("tile.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+    }
+
+    
+    
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+    {
+        return unlocalizedName.substring(unlocalizedName.indexOf(".")+1);
+    }
+    
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubBlocks(Item item, CreativeTabs creativeTabs, List list)
@@ -109,8 +135,15 @@ public class BlockTileEntities extends BlockNRM {
         switch (meta)
         {
             case 0:
-                return new TileEntityGrindStone();
+                return new TileEntityGrindstone();
         }
+        return null;
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World p_149915_1_, int p_149915_2_)
+    {
+        // TODO Auto-generated method stub
         return null;
     }
 

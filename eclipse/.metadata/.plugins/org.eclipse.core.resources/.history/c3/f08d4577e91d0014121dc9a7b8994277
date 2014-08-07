@@ -1,0 +1,17 @@
+package com.realmcoder.newrealmminecraft.Item.crafting;
+
+import com.realmcoder.newrealmminecraft.utility.OreStack;
+
+import net.minecraft.item.ItemStack;
+
+
+public class RecipeGrinder {
+    
+    
+    
+    public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, OreStack input)
+    {
+        
+    }
+    
+}

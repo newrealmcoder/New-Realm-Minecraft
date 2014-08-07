@@ -1,0 +1,11 @@
+package com.realmcoder.newrealmminecraft.utility;
+
+
+public class Orestack implements Comparable<OreStack>{
+    
+    public Orestack(String oreName, int stackSize)
+    {
+        
+    }
+    
+}

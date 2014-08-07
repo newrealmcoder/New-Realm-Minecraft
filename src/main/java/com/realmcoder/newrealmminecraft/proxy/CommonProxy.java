@@ -1,6 +1,6 @@
 package com.realmcoder.newrealmminecraft.proxy;
 
-import com.realmcoder.newrealmminecraft.tileentity.TileEntityGrindStone;
+import com.realmcoder.newrealmminecraft.tileentity.TileEntityGrindstone;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 /**
@@ -11,7 +11,7 @@ public abstract class CommonProxy implements IProxy {
     @Override
     public void registerTileEntities()
     {
-        GameRegistry.registerTileEntity(TileEntityGrindStone.class, "Grindstone");
+        GameRegistry.registerTileEntity(TileEntityGrindstone.class, "Grindstone");
     }
 
 }

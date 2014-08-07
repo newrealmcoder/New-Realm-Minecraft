@@ -19,6 +19,15 @@ public class MessageTileEntityNRM implements IMessage, IMessageHandler<MessageTi
     public String customName, owner;
     public boolean isPrivate;
 
+    /**
+     * This is a necessary components of messages because otherwise it won't be instantiable from SimpleNetworkWrapper,
+     * making it impossible to be used
+     */
+    public MessageTileEntityNRM()
+    {
+        
+    }
+    
     public MessageTileEntityNRM(TileEntityNRM tileNRM)
     {
         this.x = tileNRM.xCoord;

@@ -1,0 +1,73 @@
+package com.realmcoder.newrealmminecraft.utility;
+
+import java.util.Comparator;
+
+
+public class OreStack implements Comparable<OreStack>{
+    
+    private String oreName;
+    private int stackSize;
+    
+    public static Comparator<OreStack> comparator = new Comparator<OreStack>()
+    {
+        @Override
+        public int compare(OreStack oreStack1, OreStack oreStack2)
+        {
+            
+            if(oreStack1 != null)
+            {
+                if(oreStack2 != null)
+                {
+                    if(oreStack1.oreName.equalsIgnoreCase(oreStack2.oreName))
+                    {
+                        return oreStack1.stackSize - oreStack2.stackSize;
+                    }
+                    else
+                    {
+                        return oreStack1.oreName.compareToIgnoreCase(oreStack2.oreName);
+                    }
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            else
+            {
+                if(oreStack2 != null)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+    };
+    
+    public OreStack(String oreName, int stackSize)
+    {
+        this.oreName = oreName;
+        this.stackSize = stackSize;
+    }
+
+    public String getName()
+    {
+        return oreName;
+    }
+    
+    public int getStackSize()
+    {
+        return stackSize;
+    }
+
+    @Override
+    public int compareTo(OreStack o)
+    {
+        return comparator.compare(this, o);
+    }
+    
+    
+    
+}

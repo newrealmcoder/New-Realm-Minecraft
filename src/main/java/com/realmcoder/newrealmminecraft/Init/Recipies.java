@@ -1,6 +1,8 @@
 package com.realmcoder.newrealmminecraft.Init;
 
+import com.realmcoder.newrealmminecraft.recipe.RecipeRegistry;
 import com.realmcoder.newrealmminecraft.reference.Names;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
@@ -14,6 +16,8 @@ public class Recipies {
 
     public static void init()
     {
+        RecipeRegistry.init();
+        
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.material, 3, Names.Items.MATERIAL_END_OF_DUSTS), "s s", " s ", 's', "stone"));
         GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.ITEM_MORTAR_AND_PESTLE), "bowlStone", "stickWood"));
 
