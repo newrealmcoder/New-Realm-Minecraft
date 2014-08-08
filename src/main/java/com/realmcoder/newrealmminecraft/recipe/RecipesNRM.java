@@ -13,7 +13,7 @@ public abstract class RecipesNRM {
     
     protected List<RecipeNRM> recipes;
     
-    public void addRecipe(RecipeGrinder recipe)
+    public void addRecipe(RecipeNRM recipe)
     {
         recipes.add(recipe);
     }

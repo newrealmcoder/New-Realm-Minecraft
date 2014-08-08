@@ -1,0 +1,6 @@
+package com.realmcoder.newrealmminecraft.api.itemstack;
+
+
+public class OmniStack {
+    
+}

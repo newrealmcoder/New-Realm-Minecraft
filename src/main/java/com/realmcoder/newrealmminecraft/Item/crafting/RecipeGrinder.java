@@ -2,17 +2,18 @@ package com.realmcoder.newrealmminecraft.Item.crafting;
 
 import net.minecraft.item.ItemStack;
 
-import com.realmcoder.newrealmminecraft.utility.ItemStackHelper;
-import com.realmcoder.newrealmminecraft.utility.OreStack;
+import com.realmcoder.newrealmminecraft.api.itemstack.OmniStack;
+import com.realmcoder.newrealmminecraft.api.itemstack.OreStack;
+import com.realmcoder.newrealmminecraft.helper.ItemStackHelper;
 
 
 public class RecipeGrinder implements RecipeNRM{
     
     private ItemStack output;
     private int amountToOutputAtFullEfficiency;
-    private OreStack input;
+    private OmniStack input;
     
-    public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, OreStack input)
+    public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, OmniStack input)
     {
         this.output = output;
         this.output.stackSize = 1;
@@ -22,7 +23,7 @@ public class RecipeGrinder implements RecipeNRM{
     
     public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, ItemStack input)
     {
-        this(output, amountToOutputAtFullEfficiency, new OreStack(input));
+        this(output, amountToOutputAtFullEfficiency, new OmniStack(input));
     }
     
     public ItemStack getOutput()
@@ -42,17 +43,17 @@ public class RecipeGrinder implements RecipeNRM{
     
     public boolean isValidInput(ItemStack input)
     {
-        return this.input.doesItemNameMatch(input);
+        return this.input.equals(new OmniStack(input));
     }
     
-    public boolean isValidInput(OreStack input)
+    public boolean isValidInput(OmniStack omniStack)
     {
-        return this.input.getName().equalsIgnoreCase(input.getName());
+        return this.input.equals(omniStack);
     }
     
     private boolean matches(RecipeGrinder recipe)
     {
-        return recipe.amountToOutputAtFullEfficiency == this.amountToOutputAtFullEfficiency && ItemStackHelper.areItemStacksEqualish(recipe.output, this.output) && this.isValidInput(recipe.input);
+        return recipe.amountToOutputAtFullEfficiency == this.amountToOutputAtFullEfficiency && ItemStackHelper.areItemStacksAreEqualIgnoreSize(recipe.output, this.output) && this.isValidInput(recipe.input);
     }
     
     public boolean equals(Object obj)
@@ -66,9 +67,9 @@ public class RecipeGrinder implements RecipeNRM{
     }
 
     @Override
-    public boolean isOneOfValidInputs(OreStack oreStack)
+    public boolean isOneOfValidInputs(OmniStack omniStack)
     {
-        return isValidInput(oreStack);
+        return isValidInput(omniStack);
     }
     
 }

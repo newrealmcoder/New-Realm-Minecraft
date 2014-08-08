@@ -1,0 +1,8 @@
+package com.realmcoder.newrealmminecraft.api;
+
+
+public class GearEntry {
+    
+    public GearEntry(OreStack stack)
+    
+}

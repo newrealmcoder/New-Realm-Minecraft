@@ -1,13 +1,9 @@
 package com.realmcoder.newrealmminecraft.recipe;
 
-import java.util.List;
-
 import net.minecraft.item.ItemStack;
 
-import com.google.common.collect.ImmutableList;
 import com.realmcoder.newrealmminecraft.Item.crafting.RecipeGrinder;
-import com.realmcoder.newrealmminecraft.Item.crafting.RecipeNRM;
-import com.realmcoder.newrealmminecraft.utility.OreStack;
+import com.realmcoder.newrealmminecraft.api.itemstack.OmniStack;
 
 
 public class RecipesGrinder extends RecipesNRM{
@@ -24,7 +20,7 @@ public class RecipesGrinder extends RecipesNRM{
         return grinderRegistry;
     }
     
-    public void addRecipe(ItemStack output, int highAmountPossible, OreStack input)
+    public void addRecipe(ItemStack output, int highAmountPossible, OmniStack input)
     {
         recipes.add(new RecipeGrinder(output, highAmountPossible, input));
     }

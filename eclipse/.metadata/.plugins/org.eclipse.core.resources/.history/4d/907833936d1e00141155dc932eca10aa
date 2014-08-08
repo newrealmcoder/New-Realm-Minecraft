@@ -1,0 +1,63 @@
+package com.realmcoder.newrealmminecraft.api.itemstack;
+
+import java.util.Comparator;
+
+import net.minecraftforge.fluids.FluidStack;
+
+/**
+ * Created by RealmCoder on 8/5/14.
+ * Contributors:
+ */
+public class OmniStack {
+    
+    private final Object stack;
+    
+    public static Comparator<OmniStack> comaparator = new Comparator<OmniStack>()
+    {
+
+        /**
+         * @param omniStack1, omniStack2
+         * @return 0 --> Are Equal, Integer.MIN_VALUE --> incomparable on side of omniStack1, Integer.MIN_VALUE -->
+         * incomparable on side of omniStack2, any other value shows the comparisons of the two stacks
+         */
+        @Override
+        public int compare(OmniStack omniStack1, OmniStack omniStack2)
+        {
+            if(omniStack1.stack instanceof OreStack)
+            {
+                if(omniStack2.stack instanceof OreStack)
+                {
+                    return OreStack.comparator.compare((OreStack)omniStack1.stack, (OreStack)omniStack2.stack);
+                }
+                else
+                {
+                    return Integer.MIN_VALUE;
+                }
+            }
+            else if(omniStack1.stack instanceof FluidStack)
+            {
+                if(omniStack2.stack instanceof FluidStack)
+                {
+                    
+                }
+                else
+                {
+                    return Integer.MIN_VALUE;
+                }
+            }
+            return 0;
+        }
+    };
+    
+    private int stackSize;
+    
+    /**
+     * Creates an empty stack
+     */
+    public OmniStack()
+    {
+        stackSize = 1;
+        stack = null;
+    }
+    
+}

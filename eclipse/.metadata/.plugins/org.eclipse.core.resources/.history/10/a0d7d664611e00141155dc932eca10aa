@@ -1,0 +1,42 @@
+package com.realmcoder.newrealmminecraft.recipe;
+
+import java.util.List;
+
+import net.minecraft.item.ItemStack;
+
+import com.google.common.collect.ImmutableList;
+import com.realmcoder.newrealmminecraft.Item.crafting.RecipeGrinder;
+import com.realmcoder.newrealmminecraft.Item.crafting.RecipeNRM;
+import com.realmcoder.newrealmminecraft.utility.OreStack;
+
+
+public class RecipesGrinder extends RecipesNRM{
+    
+    private static RecipesGrinder grinderRegistry = null;
+    
+    public static RecipesGrinder getInstance()
+    {
+        if(grinderRegistry == null)
+        {
+            grinderRegistry = new RecipesGrinder();
+        }
+        
+        return grinderRegistry;
+    }
+    
+    public void addRecipe(ItemStack output, int highAmountPossible, OreStack input)
+    {
+        recipes.add(new RecipeGrinder(output, highAmountPossible, input));
+    }
+    
+    public void addRecipe(ItemStack output, int highAmountPossible, ItemStack input)
+    {
+        recipes.add(new RecipeGrinder(output, highAmountPossible, input));
+    }
+
+    @Override
+    public int getRecipeListID()
+    {
+        return RecipeRegistry.GRINDSTONE_RECIPES_ID;
+    }
+}

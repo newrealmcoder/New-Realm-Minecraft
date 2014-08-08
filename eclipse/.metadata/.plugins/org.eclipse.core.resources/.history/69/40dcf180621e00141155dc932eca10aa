@@ -1,0 +1,36 @@
+package com.realmcoder.newrealmminecraft.api.itemstack;
+
+import java.util.Comparator;
+import java.util.function.Function;
+import java.util.function.ToDoubleFunction;
+import java.util.function.ToIntFunction;
+import java.util.function.ToLongFunction;
+
+
+public class OmniStack {
+    
+    private final Object stack;
+    
+    public static Comparator<OmniStack> comaparator = new Comparator<OmniStack>()
+    {
+
+        @Override
+        public int compare(OmniStack o1, OmniStack o2)
+        {
+            // TODO Auto-generated method stub
+            return 0;
+        }
+    };
+    
+    private int stackSize;
+    
+    /**
+     * Creates an empty stack
+     */
+    public OmniStack()
+    {
+        stackSize = 1;
+        stack = null;
+    }
+    
+}

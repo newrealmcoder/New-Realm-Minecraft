@@ -1,0 +1,74 @@
+package com.realmcoder.newrealmminecraft.Item.crafting;
+
+import net.minecraft.item.ItemStack;
+
+import com.realmcoder.newrealmminecraft.api.ItemStackHelper;
+import com.realmcoder.newrealmminecraft.api.itemstack.OreStack;
+
+
+public class RecipeGrinder implements RecipeNRM{
+    
+    private ItemStack output;
+    private int amountToOutputAtFullEfficiency;
+    private OreStack input;
+    
+    public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, OreStack input)
+    {
+        this.output = output;
+        this.output.stackSize = 1;
+        this.amountToOutputAtFullEfficiency = amountToOutputAtFullEfficiency;
+        this.input = input;
+    }
+    
+    public RecipeGrinder(ItemStack output, int amountToOutputAtFullEfficiency, ItemStack input)
+    {
+        this(output, amountToOutputAtFullEfficiency, new OreStack(input));
+    }
+    
+    public ItemStack getOutput()
+    {
+        return output;
+    }
+    
+    public int getAmountToOutput(double percentage)
+    {
+        return (int) (percentage * (double) amountToOutputAtFullEfficiency);
+    }
+    
+    public int getAmountToOutput(int percentage)
+    {
+        return (int) (((double)(percentage * amountToOutputAtFullEfficiency))/100D);
+    }
+    
+    public boolean isValidInput(ItemStack input)
+    {
+        return this.input.doesItemNameMatch(input);
+    }
+    
+    public boolean isValidInput(OreStack input)
+    {
+        return this.input.getName().equalsIgnoreCase(input.getName());
+    }
+    
+    private boolean matches(RecipeGrinder recipe)
+    {
+        return recipe.amountToOutputAtFullEfficiency == this.amountToOutputAtFullEfficiency && ItemStackHelper.areItemStacksEqualish(recipe.output, this.output) && this.isValidInput(recipe.input);
+    }
+    
+    public boolean equals(Object obj)
+    {
+        if(obj instanceof RecipeGrinder)
+        {
+            return matches((RecipeGrinder)obj);
+        }
+        
+        return false;
+    }
+
+    @Override
+    public boolean isOneOfValidInputs(OreStack oreStack)
+    {
+        return isValidInput(oreStack);
+    }
+    
+}

@@ -1,0 +1,65 @@
+package com.realmcoder.newrealmminecraft.api.itemstack;
+
+import java.util.List;
+
+
+public class StackGroup {
+    
+    private OmniStack[] stacks;
+    
+    public StackGroup(OmniStack...omniStacks)
+    {
+        stacks = omniStacks;
+    }
+    
+    public StackGroup(List<OmniStack> omniStacks)
+    {
+        stacks = new OmniStack[omniStacks.size()];
+        for(int i = 0; i < omniStacks.size(); i++)
+        {
+            stacks[i] = omniStacks.get(i);
+        }
+    }
+    
+    public boolean existsInStackGround(OmniStack omniStack)
+    {
+        for(OmniStack checkStack : stacks)
+        {
+            if(checkStack.equals(omniStack))
+                return true;
+        }
+        return false;
+    }
+    
+    public boolean meetsOrExceedsElement(OmniStack omniStack)
+    {
+        for(OmniStack checkStack : stacks)
+        {
+            if(checkStack.equals(omniStack))
+                return checkStack.getStackAmount() <= omniStack.getStackAmount();
+        }
+        return false;
+    }
+    
+    public boolean stackGroupMeetsOrExceeds(StackGroup stackGroup)
+    {
+        if(stacks.length > stackGroup.stacks.length)
+            return false;
+        boolean[] metExpectation = new boolean[stacks.length];
+        for(OmniStack stack : stackGroup.stacks)
+        {
+            
+        }
+    }
+    
+    public OmniStack[] getStacks()
+    {
+        return stacks;
+    }
+    
+    public int numberOfStacks()
+    {
+        return stacks.length;
+    }
+    
+}

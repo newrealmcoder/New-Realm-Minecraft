@@ -6,7 +6,10 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 
-
+/**
+ * Created by RealmCoder on 8/5/14.
+ * Contributors:
+ */
 public class SlotRecipeAffiliated extends Slot {
 
     private int recipeType;

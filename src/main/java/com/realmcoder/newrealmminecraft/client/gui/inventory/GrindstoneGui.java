@@ -8,7 +8,10 @@ import com.realmcoder.newrealmminecraft.inventory.ContainerGrindstone;
 import com.realmcoder.newrealmminecraft.reference.Reference;
 import com.realmcoder.newrealmminecraft.tileentity.TileEntityGrindstone;
 
-
+/**
+ * Created by RealmCoder on 8/5/14.
+ * Contributors:
+ */
 public class GrindstoneGui extends GuiContainer {
     
     /**

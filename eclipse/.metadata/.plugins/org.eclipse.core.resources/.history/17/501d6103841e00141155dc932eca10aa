@@ -1,0 +1,111 @@
+package com.realmcoder.newrealmminecraft.api.itemstack;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class StackGroup {
+    
+    private OmniStack[] stacks;
+    
+    public StackGroup(OmniStack...omniStacks)
+    {
+        stacks = omniStacks;
+    }
+    
+    public StackGroup(List<OmniStack> omniStacks)
+    {
+        stacks = new OmniStack[omniStacks.size()];
+        for(int i = 0; i < omniStacks.size(); i++)
+        {
+            stacks[i] = omniStacks.get(i);
+        }
+    }
+    
+    public StackGroup(int numOfStacks, OmniStack...omniStacks)
+    {
+        stacks = new OmniStack[numOfStacks];
+        for(int i = 0; i < numOfStacks; i++)
+        {
+            if(i < omniStacks.length)
+                stacks[i] = omniStacks[i];
+            else
+                stacks[i] = new OmniStack();
+        }
+    }
+    
+    public void condenseStackGroups()
+    {
+        for(int i = stacks.length-1; i > 0; i++)
+        {
+            for(int n = 0; n < i; n++)
+            {
+                
+            }
+        }
+    }
+    
+    public boolean existsInStackGround(OmniStack omniStack)
+    {
+        for(OmniStack checkStack : stacks)
+        {
+            if(checkStack.equals(omniStack))
+                return true;
+        }
+        return false;
+    }
+    
+    public boolean meetsOrExceedsElement(OmniStack omniStack)
+    {
+        for(OmniStack checkStack : stacks)
+        {
+            if(checkStack.equals(omniStack))
+                return checkStack.getStackAmount() <= omniStack.getStackAmount();
+        }
+        return false;
+    }
+    
+    public boolean stackGroupMeetsOrExceeds(StackGroup stackGroup)
+    {
+        if(stacks.length > stackGroup.stacks.length)
+            return false;
+        ArrayList<OmniStack> stacks = new ArrayList<OmniStack>();
+        for(OmniStack s : this.stacks)
+            stacks.add(s.clone());
+        ArrayList<OmniStack> stackToRemove = new ArrayList<OmniStack>();
+        for(OmniStack checkStack : stackGroup.stacks.clone())
+        {
+            for(OmniStack tempStack : stacks)
+            {
+                if(checkStack.equals(tempStack))
+                {
+                    if(tempStack.getStackAmount() <= checkStack.getStackAmount())
+                    {
+                        stackToRemove.add(tempStack);
+                        checkStack.setStackAmount(checkStack.getStackAmount()-tempStack.getStackAmount());
+                        if(checkStack.getStackAmount()<=0)
+                            break;
+                    }
+                    else
+                    {
+                        tempStack.setStackAmount(tempStack.getStackAmount() - checkStack.getStackAmount());
+                        break;
+                    }
+                }
+            }
+            stacks.removeAll(stackToRemove);
+        }
+        return stacks.size() == 0;
+    }
+    
+    public OmniStack[] getStacks()
+    {
+        return stacks;
+    }
+    
+    public int numberOfStacks()
+    {
+        return stacks.length;
+    }
+    
+}

@@ -1,0 +1,14 @@
+package com.realmcoder.newrealmminecraft.api;
+
+
+public class GearEntry {
+    
+    private OreStack typeName;
+    private int speed, durability;
+    
+    public GearEntry(OreStack stack, int speed, int durability)
+    {
+        
+    }
+    
+}

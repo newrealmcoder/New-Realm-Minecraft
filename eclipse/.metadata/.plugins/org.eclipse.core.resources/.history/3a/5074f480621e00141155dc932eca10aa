@@ -1,0 +1,16 @@
+package com.realmcoder.newrealmminecraft.api;
+
+import com.realmcoder.newrealmminecraft.api.itemstack.OreStack;
+
+
+public class GearEntry {
+    
+    private OreStack typeName;
+    private int speed, durability;
+    
+    public GearEntry(OreStack stack, int speed, int durability)
+    {
+        
+    }
+    
+}

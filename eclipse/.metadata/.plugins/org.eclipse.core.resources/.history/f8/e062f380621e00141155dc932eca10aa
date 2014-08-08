@@ -1,0 +1,12 @@
+package com.realmcoder.newrealmminecraft.api;
+
+import java.util.ArrayList;
+
+
+public class GearRegistry {
+    
+    private static GearRegistry instance;
+    
+    private ArrayList<GearEntry> gears;
+    
+}
